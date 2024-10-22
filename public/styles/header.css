@@ -1,0 +1,49 @@
+html {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Изменяем направление flex для шапки и основной части */
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+}
+
+header {
+    width: 100%;
+    background-color: #333; /* Цвет фона шапки */
+    padding: 1rem; /* Отступы внутри шапки */
+}
+
+nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
+    display: flex; /* Flexbox для расположения кнопок */
+    justify-content: center; /* Центрируем кнопки */
+}
+
+nav ul li {
+    font-size: 0.5rem;
+    margin: 0 1rem; /* Отступ между кнопками */
+}
+
+/* Шапка с нопками: "главаная" "о игре" "контакты"*/
+nav a {
+    color: white;
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+    transition: color 0.3s; /* Плавный переход цвета текста */
+}
+
+nav a:hover {
+    color: #28a745; /* Цвет текста при наведении */
+}
+
+

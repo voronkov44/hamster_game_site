@@ -1,0 +1,82 @@
+html {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+}
+
+body {
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem; /* Отступ между формой и нижней частью */
+}
+
+input {
+    background-color: #555; /* Цвет фона поля ввода */
+    border: none;
+    border-radius: 5px;
+    color: white; /* Цвет текста в поле */
+    padding: 0.5rem;
+    margin: 0.5rem 0; /* Отступ между полями ввода */
+    width: 200px; /* Ширина полей */
+    font-size: 0.6rem;
+}
+
+input::placeholder {
+    color: #ddd; /* Цвет текста плейсхолдера */
+}
+
+/*Войти*/
+#loginButton {
+    background-color: #28a745; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 0.5rem 2rem; /* Отступы внутри кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+#loginButton:hover {
+    background-color: #218838;
+}
+
+/* Не зарегистрирован? зарегистрироваться */
+#registerPrompt {
+    margin-top: 1rem; /* Отступ сверху для текста регистрации */
+}
+
+/* Зарегистрироваться */
+#registerButton {
+    color: #28a745; /* Цвет текста ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+#registerButton:hover {
+    text-decoration: underline; /* Подчеркивание ссылки при наведении */
+}

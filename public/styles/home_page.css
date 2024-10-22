@@ -1,0 +1,59 @@
+html {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+}
+
+/* кнопка играть */
+body {
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Изменяем направление flex для шапки и основной части */
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Центрируем текст */
+    flex-grow: 1; /* Заставляем основную часть занимать доступное пространство */
+}
+/* отступ между "Добро пожаловать" и "Приготовьтесь к увлекательной игре"*/
+h1 {
+    margin-bottom: 1rem; /* Отступ между заголовком и описанием */
+    font-size: 1rem;
+}
+
+#description {
+    margin-bottom: 2rem; /* Отступ между описанием и кнопкой */
+    font-size: 0.5rem;
+}
+
+#playButton {
+    background-color: #28a745; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 1rem 2rem; /* Отступы внутри кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+#playButton:hover {
+    background-color: #218838; /* Цвет фона при наведении */
+}
+
+#previewImage {
+    width: 100px; /* Изображение хомяка в превью */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    margin-top: 2rem; /* Отступ сверху для изображения */
+}
+
+
+

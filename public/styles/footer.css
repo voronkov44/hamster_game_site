@@ -1,0 +1,35 @@
+/* Примените это в вашем файле CSS */
+html, body {
+    height: 100%; /* Устанавливаем высоту тела на 100% */
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Выстраиваем дочерние элементы в колонку */
+}
+
+footer {
+    width: 100%;
+    background-color: #333; /* Цвет фона футера */
+    padding: 1rem; /* Отступы внутри футера */
+    text-align: center; /* Центрируем текст футера */
+    margin-top: auto; /* Отодвигает футер вниз */
+
+    /* Добавьте стили, если это необходимо */
+}
+
+footer p {
+    margin: 0; /* Убираем отступы у параграфов футера */
+    font-size: 0.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s; /* Плавный переход цвета текста */
+}
+
+footer a:hover {
+    color: #28a745; /* Цвет текста при наведении */
+}

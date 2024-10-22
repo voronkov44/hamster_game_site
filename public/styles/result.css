@@ -1,0 +1,67 @@
+html {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Изменяем направление flex для шапки и основной части */
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+    position: relative; /* Устанавливаем относительное позиционирование для body */
+    text-align: center; /* Центрируем текст */
+}
+
+/* Результат вашей игры */
+h1 {
+    font-size: 1rem;
+    margin-bottom: 2rem; /* Отступ снизу для заголовка */
+    text-shadow: 2px 2px 0px #000; /* Тень для заголовка для эффекта 8-бит */
+}
+
+/* Вы кликнули */
+#result {
+    font-size: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для результата */
+    border: 2px solid #fff; /* Белая рамка */
+    padding: 1rem; /* Отступ внутри блока результата */
+    border-radius: 5px; /* Скругленные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для блока результата */
+}
+
+/* Играть снова */
+a {
+    padding-top: 1rem;
+}
+
+#playButton {
+    background-color: #28a745; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 0.5rem 1rem; /* Отступы внутри кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+#playButton:hover {
+    background-color: #218838; /* Цвет фона при наведении */
+}
+
+#clickableImage {
+    width: 100px; /* Указание ширины изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    cursor: pointer; /* Стиль курсора при наведении на изображение */
+    transition: transform 0.1s; /* Плавный эффект при клике */
+}
+
+#clickableImage:active {
+    transform: scale(0.95); /* Уменьшение размера при нажатии */
+}
+
+
+

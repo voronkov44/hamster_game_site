@@ -1,0 +1,51 @@
+html {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрируем основной контент */
+    align-items: center; /* Центрируем основной контент по вертикали */
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+    position: relative; /* Устанавливаем относительное позиционирование для body */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем остальной контент */
+}
+
+#display, #counter {
+    position: absolute; /* Устанавливаем абсолютное позиционирование для размещения в углу */
+    top: 20px; /* Отступ сверху */
+    left: 20px; /* Отступ слева */
+    z-index: 1000; /* Увеличиваем z-index, чтобы элементы были выше остальных */
+}
+
+#display {
+    height: 32px;
+    margin-bottom: 1rem; /* Немного отступа сверху */
+}
+
+#counter {
+    height: 32px;
+    margin-top: 1rem; /* Немного отступа снизу */
+}
+
+#clickableImage {
+    width: 100px; /* Указание ширины изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    cursor: pointer; /* Стиль курсора при наведении на изображение */
+    transition: transform 0.1s; /* Плавный эффект при клике */
+}
+
+#clickableImage:active {
+    transform: scale(0.95); /* Уменьшение размера при нажатии */
+}

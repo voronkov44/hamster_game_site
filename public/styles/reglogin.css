@@ -1,0 +1,66 @@
+html {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+}
+
+body {
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem; /* Отступ между формой и нижней частью */
+}
+
+input {
+    background-color: #555; /* Цвет фона поля ввода */
+    border: none;
+    border-radius: 5px;
+    color: white; /* Цвет текста в поле */
+    padding: 0.5rem;
+    margin: 0.5rem 0; /* Отступ между полями ввода */
+    width: 200px; /* Ширина полей */
+    font-size: 0.5rem;
+}
+
+input::placeholder {
+    color: #ddd; /* Цвет текста плейсхолдера */
+}
+
+#registerButton {
+    background-color: #28a745; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 0.5rem 2rem; /* Отступы внутри кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+#registerButton:hover {
+    background-color: #218838;
+}
